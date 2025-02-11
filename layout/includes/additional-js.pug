@@ -17,6 +17,14 @@ div
   if theme.snackbar.enable
     script(src=url_for(theme.asset.snackbar))
 
+  //- new
+  //- if theme.algolia_search.enable
+  //-   script(src=url_for(theme.asset.algolia_search_v4))
+  //-   script(src=url_for(theme.asset.instantsearch_v4))
+  //-   script(src=url_for(theme.asset.algolia_js))
+  //- else if theme.local_search.enable
+  //-   script(src=url_for(theme.asset.local_search))
+
   .js-pjax
     if needLoadCountJs
       != partial("includes/third-party/card-post-count/index", {}, { cache: true })

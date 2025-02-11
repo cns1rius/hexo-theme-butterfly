@@ -28,6 +28,8 @@ script.
       else headerList['x-umami-api-key'] = config.token
       const res = await fetch(`!{apiUrl}/websites/!{website_id}/stats?startAt=0000000000&endAt=${now}${keyUrl}`, {
         method: "GET",
+        mode: "cors",
+        cache: "default",
         headers: headerList
       })
       return await res.json()

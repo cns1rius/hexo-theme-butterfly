@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "xingshu";
+  src: url("/css/相遇的那一刻开始2.ttf") format("truetype");
+  /* font-display: fallback; */
+}
+
+body {
+  font-family: xingshu, -apple-system, IBM Plex Mono, monosapce, "微软雅黑",
+    sans-serif;
+  /* font-weight: 600; */
+  font-size: 15px;
+}
+
+@font-face {
+  font-family: "iconfont"; /* Project id 3903417 */
+  src: url("//at.alicdn.com/t/c/font_3903417_6ob0z6ecywv.woff2?t=1676717539136")
+      format("woff2"),
+    url("//at.alicdn.com/t/c/font_3903417_6ob0z6ecywv.woff?t=1676717539136")
+      format("woff"),
+    url("//at.alicdn.com/t/c/font_3903417_6ob0z6ecywv.ttf?t=1676717539136")
+      format("truetype");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-rss:before {
+  content: "\e808";
+}
+
+.icon-fenlei:before {
+  content: "\e625";
+}
+
+.icon-gitee-fill-round:before {
+  content: "\e686";
+}
+
+.icon-bilibili-line:before {
+  content: "\e66d";
+}
+
+.icon-danmukaiqi:before {
+  content: "\e613";
+}
+
+.icon-bilibili:before {
+  content: "\e609";
+}
+
+.icon-gitee:before {
+  content: "\e60c";
+}
+
+.icon-a-yuyanfanti:before {
+  content: "\e643";
+}
+
+.icon-bing:before {
+  content: "\e69a";
+}
+
+.icon-edge:before {
+  content: "\ebfa";
+}
+
+/* 
+/* @font-face {
+  font-family: "iconfont";
+  /* Project id 3498204 */
+/*  src: url('iconfont.woff2?t=1659311976990') format('woff2'),
+    url('iconfont.woff?t=1659311976990') format('woff'),
+    url('iconfont.ttf?t=1659311976990') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-danmu:before {
+  content: "\e612";
+}
+
+.icon-biaoqian:before {
+  content: "\e63d";
+}
+
+.icon-fenlei:before {
+  content: "\e601";
+}
+
+.icon-fanti:before {
+  content: "\e6d8";
+}
+
+.icon-baidu:before {
+  content: "\e60a";
+}
+
+.icon-csdn:before {
+  content: "\e600";
+}
+
+.icon-RSS:before {
+  content: "\e78a";
+}
+
+.icon-bilibili:before {
+  content: "\e609";
+}
+
+.icon-gitee:before {
+  content: "\e60c";
+}
+
+.icon-zhihu:before {
+  content: "\e60d";
+} */

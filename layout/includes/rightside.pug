@@ -57,5 +57,10 @@ mixin rightsideItem(array)
       +rightsideItem(showArray)
 
     button#go-up(type="button" title=_p("rightside.back_to_top"))
-      span.scroll-percent
+      //- span.scroll-percent
       i.fas.fa-arrow-up
+      span#percent 0
+        span %
+
+    button#go-down(type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)")
+      i.fas.fa-arrow-down
