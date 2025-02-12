@@ -1005,8 +1005,8 @@ aplayerInject:
 # https://github.com/polonel/SnackBar
 # position: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
-  position: bottom-left
+  enable: true
+  position: top-right
   # The background color of Toast Notification in light mode and dark mode
   bg_light: "#49b1f5"
   bg_dark: "#0091d2"
@@ -1098,6 +1098,7 @@ swiper:
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
+    # - <script async data-pjax src="/custom/ban.js"></script>
     - <link rel="prefetch" href="/custom/ban.js" as="script">
     - <link rel="prefetch" href="/custom/welcome.js" as="script">
     - <link rel="prefetch" href="/custom/footer.js" as="script">
@@ -1114,11 +1115,9 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">                      所有css已在index.styl中引入
     # - <link rel="stylesheet" href="/css/rightmenu.css"> # </link 自定义右键 https://yisous.xyz/posts/11eb4aac//>
   bottom:
-    # - <script async data-pjax src="/custom/ban.js"></script>
     - <script defer data-pjax src="/custom/welcome.js"></script>
     - <script defer src="/custom/nav.js"></script>
     - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
-    - <script defer data-pjax src="https://cdn.bili33.top/npm/node-snackbar@latest/src/js/snackbar.min.js"></script>
     - <script async data-pjax src="/custom/rightmenu.js"></script>
     - <script defer src="https://cdn.bili33.top/npm/jquery@latest/dist/jquery.min.js"></script>
     - <div class="aplayer data-pjax aplayer-fixed no-destroy aplayer-withlist" data-id="7783506601" data-server="netease" data-type="playlist" data-fixed="true" data-mutex="true" data-mini="true" data-listfolded="true" data-preload="none" data-theme="var(--lyx-theme)" data-order="random" data-volume="0.5" style="z-index:514; font-family:var(--global-font),KyoukashoProL,-apple-system, IBM Plex Mono ,monosapce,&quot;微软雅黑&quot;, sans-serif;"></div>
@@ -1189,7 +1188,7 @@ CDN:
     pjax: https://lib.baomitu.com/pjax/0.2.8/pjax.min.js
     sharejs: https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js
     sharejs_css: https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css
-    # snackbar: https://cdn.bili33.top/npm/node-snackbar@latest/src/js/snackbar.min.js
+    snackbar: https://cdn.bili33.top/npm/node-snackbar@latest/src/js/snackbar.min.js
     # snackbar_css:
     translate: https://cdn1.tianli0.top/npm/js-heo@1.0.6/translate/tw_cn.js
     # twikoo:
