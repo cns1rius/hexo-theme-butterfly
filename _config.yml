@@ -1112,17 +1112,15 @@ inject:
     - <meta name="baidu-site-verification" content="codeva-TEqPHvxz8H" />
     - <meta name="google-site-verification" content="PhNm04OAt29b44VWOP0BiUatmAjYjyc9ao7CcqQO4rY" />
     # - <link rel="stylesheet" href="/xxx.css">                      所有css已在index.styl中引入
-    # - <link rel="stylesheet" href="/custom/custom.css">
     # - <link rel="stylesheet" href="/css/rightmenu.css"> # </link 自定义右键 https://yisous.xyz/posts/11eb4aac//>
-    # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <script async data-pjax src="/custom/ban.js"></script>
+    # - <script async data-pjax src="/custom/ban.js"></script>
     - <script defer data-pjax src="/custom/welcome.js"></script>
     - <script defer src="/custom/nav.js"></script>
     - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
+    - <script defer data-pjax src="https://cdn.bili33.top/npm/node-snackbar@latest/src/js/snackbar.min.js"></script>
     - <script async data-pjax src="/custom/rightmenu.js"></script>
     - <script defer src="https://cdn.bili33.top/npm/jquery@latest/dist/jquery.min.js"></script>
-    # - <script defer data-pjax src="https://cdn1.tianli0.top/npm/node-snackbar@latest/src/js/snackbar.min.js"></script>
     - <div class="aplayer data-pjax aplayer-fixed no-destroy aplayer-withlist" data-id="7783506601" data-server="netease" data-type="playlist" data-fixed="true" data-mutex="true" data-mini="true" data-listfolded="true" data-preload="none" data-theme="var(--lyx-theme)" data-order="random" data-volume="0.5" style="z-index:514; font-family:var(--global-font),KyoukashoProL,-apple-system, IBM Plex Mono ,monosapce,&quot;微软雅黑&quot;, sans-serif;"></div>
     - <script defer data-pjax src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script>
     - <script defer data-pjax src="/custom/readPercent.js"></script>
