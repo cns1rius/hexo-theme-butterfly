@@ -126,7 +126,7 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: false
+  enable: true
   subtitle: "Page Not Found"
   background: https://static.hdslb.com/error/very_sorry.png
 

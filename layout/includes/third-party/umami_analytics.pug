@@ -9,7 +9,7 @@ script.
     const config = !{JSON.stringify(UV_PV)}
 
     const runTrack = () => {
-      umami.track(props => ({ ...props, url: window.location.pathname, title: GLOBAL_CONFIG_SITE.title }))
+      umami.track(props => ({ ...props, url: window.location.pathname + window.location.search + window.location.hash, title: GLOBAL_CONFIG_SITE.title }))
     }
 
     const loadUmamiJS = () => {
