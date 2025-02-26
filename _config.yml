@@ -22,7 +22,9 @@ menu:
     归档: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
-  追番: /bangumis/ || fab fa-bilibili
+  分享|| fas fa-share-alt||hide:
+    追番: /bangumis/ || fab fa-bilibili
+    追剧: /cinemas/ || fab fa-bilibili
   友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
   tools||fas fa-tools||hide:
@@ -305,7 +307,7 @@ aside:
       link: https://github.com/cns1rius
   card_announcement:
     enable: true
-    content: "剑未佩妥，出门已是江湖；<br/>千帆过尽，归来仍是少年。"
+    content: "剑未佩妥，出门已是江湖；<br/>千帆过尽，归来仍是少年。<br/>欢迎留言/交换友链"
   card_recent_post:
     enable: true
     # If set 0 will show all
