@@ -19,12 +19,13 @@ nav:
 menu:
   首页: / || fas fa-home
   文章||fas fa-folder||hide:
-    归档: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
+    归档: /archives/ || fas fa-archive
     分类: /categories/ || fas fa-folder-open
   分享|| fas fa-share-alt||hide:
     追番: /bangumis/ || fab fa-bilibili
     追剧: /cinemas/ || fab fa-bilibili
+    # 游戏: /games/ || fas fa-gamepad
   友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
   tools||fas fa-tools||hide:
@@ -182,7 +183,9 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
-    - "间歇性更新，持续性摆烂,喵~"
+    # - "间歇性更新，持续性摆烂,喵~"
+    - "剑未佩妥，出门已是江湖"
+    - "千帆过尽，归来仍是少年"
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -202,7 +205,7 @@ index_layout: 3 # new
 index_post_content:
   method: 3
   # If you set method to 2 or 3, the length need to config
-  length: 500
+  length: 200
 
 # --------------------------------------
 # Post Settings
