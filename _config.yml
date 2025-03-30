@@ -25,7 +25,7 @@ menu:
   分享|| fas fa-share-alt||hide:
     追番: /bangumis/ || fab fa-bilibili
     追剧: /cinemas/ || fab fa-bilibili
-    # 游戏: /games/ || fas fa-gamepad
+    游戏: /games/ || fas fa-gamepad
   友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
   tools||fas fa-tools||hide:
