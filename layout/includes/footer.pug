@@ -1,4 +1,5 @@
 #footer-wrap
+  .footer-beautify
   if theme.footer.owner.enable
     - const currentYear = new Date().getFullYear()
     - const sinceYear = theme.footer.owner.since
@@ -16,3 +17,22 @@
       a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
   if theme.footer.custom_text
     .footer_custom_text!= theme.footer.custom_text
+  if theme.footer.ICP
+    .icp
+      each item in theme.footer.ICP
+        a(href=item.href target='_blank')
+          if item.img
+            img(src=item.img width='20' height='20' style='vertical-align: middle; margin-right: 5px;')
+          = item.descr
+        unless index === theme.footer.ICP.length - 1
+          span(style='margin-left: 20px;')
+    br
+  if theme.footer.virtualICP
+    .virtual-icp
+      each item in theme.footer.virtualICP
+        a(href=item.href target='_blank')
+          if item.img
+            img(src=item.img width='20' height='20' style='vertical-align: middle; margin-right: 5px;')
+          = item.descr
+        unless index === theme.footer.virtualICP.length - 1
+          span(style='margin-left: 20px;')
