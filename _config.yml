@@ -1114,16 +1114,16 @@ swiper:
 inject:
   head:
     - <script async data-pjax src="/custom/ban.js"></script>
-    - <link rel="prefetch" href="/custom/nav.js" as="script">
+    - <link rel="preload" href="/custom/nav.js" as="script">
     - <link rel="prefetch" href="/custom/welcome.js" as="script">
-    - <link rel="prefetch" href="/custom/footer.js" as="script">
+    - <link rel="preload" href="/custom/footer.js" as="script">
     - <link rel="prefetch" as="image" href="/img/custom/sakura.svg" type="image/x-svg">
-    - <link rel="prefetch" href="/img/custom/avatar.webp" type="image/webp">
-    - <link rel="prefetch" href="/img/custom/springBg.webp" type="image/webp">
+    - <link rel="preload" href="/img/custom/avatar.webp" type="image/webp">
+    - <link rel="preload" href="/img/custom/springBg.webp" type="image/webp">
     - <link rel="prefetch" href="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" as="script">
     - <link rel="preload" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/typed.js/2.0.12/typed.min.js" as="script">
-    - <link rel="prefetch" href="https://cdn.bili33.top/npm/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-    - <link rel="prefetch" href="https://cdn.bili33.top/npm/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    - <link rel="preload" href="https://cdn.bili33.top/npm/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    - <link rel="preload" href="https://cdn.bili33.top/npm/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
     - <meta name="msvalidate.01" content="6994F478B9346FDEB76593EE5F53A3EB" />
     - <meta name="baidu-site-verification" content="codeva-TEqPHvxz8H" />
     - <meta name="google-site-verification" content="PhNm04OAt29b44VWOP0BiUatmAjYjyc9ao7CcqQO4rY" />
