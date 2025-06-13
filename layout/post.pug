@@ -9,6 +9,8 @@ block content
       if theme.noticeOutdate.enable && page.noticeOutdate !== false
         include includes/post/outdate-notice.pug
       else
+        if page.summary && theme.ai_summary.enable
+          include includes/post/post-summary.pug
         !=page.content
     include includes/post/post-copyright.pug
     .tag_share

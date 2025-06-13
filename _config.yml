@@ -294,6 +294,16 @@ footer:
       descr: 萌ICP备20258106号
 
 # --------------------------------------
+# 文章设置
+# --------------------------------------
+# 文章AI摘要是否开启，会自动检索文章色summary字段，若没有则不显示
+ai_summary:
+  enable: true
+  title: S1riusのAI摘要
+  loadingText: S1rius AI正在绞尽脑汁想思路ING···
+  modelName: DeepSeek-chat
+
+# --------------------------------------
 # Aside Settings
 # --------------------------------------
 
@@ -1133,6 +1143,7 @@ inject:
     - <script defer data-pjax src="/custom/welcome.js"></script>
     - <script defer data-pjax src="/custom/nav.js"></script>
     - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
+    - <script defer data-pjax src="/custom/summary.js"></script>
     - <script async data-pjax src="/custom/rightmenu.js"></script>
     - <script defer src="https://cdn.bili33.top/npm/jquery@latest/dist/jquery.min.js"></script>
     - <div class="aplayer data-pjax aplayer-fixed no-destroy aplayer-withlist" data-id="7783506601" data-server="netease" data-type="playlist" data-fixed="true" data-mutex="true" data-mini="true" data-listfolded="true" data-preload="none" data-theme="var(--lyx-theme)" data-order="random" data-volume="0.5" style="z-index:514; font-family:var(--global-font),KyoukashoProL,-apple-system, IBM Plex Mono ,monosapce,&quot;微软雅黑&quot;, sans-serif;"></div>
