@@ -232,12 +232,9 @@ reward:
   enable: true
   text:
   QR_code:
-    - img: img/custom/donate/WeChanQR.jpg
+    - img: https://cdn.bili33.top/gh/cns1rius/cns1rius/pay.jpg
       link:
-      text: wechat
-    - img: /img/custom/donate/AliPayQR.jpg
-      link:
-      text: alipay
+      text: WeChat or Alipay
 
 # Post edit
 # Easily browse and edit blog source code online.
