@@ -183,9 +183,7 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
-    # - "间歇性更新，持续性摆烂,喵~"
-    - "剑未佩妥，出门已是江湖"
-    - "千帆过尽，归来仍是少年"
+    - "间歇性更新，持续性摆烂,喵~"
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -233,7 +231,7 @@ reward:
   text:
   QR_code:
     - img: https://cdn.bili33.top/gh/cns1rius/cns1rius/pay.jpg
-      link:
+      link: https://cdn.bili33.top/gh/cns1rius/cns1rius/pay.jpg
       text: WeChat or Alipay
 
 # Post edit
@@ -1124,7 +1122,7 @@ inject:
     - <link rel="preload" href="/img/custom/avatar.webp" type="image/webp">
     - <link rel="preload" href="/img/custom/springBg.webp" type="image/webp">
     - <link rel="prefetch" href="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" as="script">
-    - <link rel="preload" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/typed.js/2.0.12/typed.min.js" as="script">
+    - <link rel="preload" href="https://cdn.bili33.top/npm/typed.js/dist/typed.umd.js" as="script">
     - <link rel="preload" href="https://cdn.bili33.top/npm/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
     - <link rel="preload" href="https://cdn.bili33.top/npm/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
     - <meta name="msvalidate.01" content="6994F478B9346FDEB76593EE5F53A3EB" />
@@ -1189,30 +1187,30 @@ CDN:
     # gitalk:
     # gitalk_css:
     # giscus:
-    instantpage: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js
+    instantpage: https://cdn.bili33.top/npm/instant.page/instantpage.js
     # instantsearch:
     # katex:
     # katex_copytex:
-    lazyload: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js
+    lazyload: https://cdn.bili33.top/npm/vanilla-lazyload/dist/lazyload.iife.min.js
     # local_search:
     # main:
     # main_css:
     # mathjax:
-    medium_zoom: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/medium-zoom/1.0.6/medium-zoom.min.js
+    medium_zoom: https://cdn.bili33.top/npm/medium-zoom/dist/medium-zoom.min.js
     # mermaid:
     # meting_js:
     # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
-    pjax: https://cdn.bili33.top/npm/pjax@latest/pjax.min.js
+    pjax: https://cdn.bili33.top/npm/pjax/pjax.min.js
     sharejs: https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js
     sharejs_css: https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css
-    snackbar: https://cdn.bili33.top/npm/node-snackbar@latest/src/js/snackbar.min.js
+    snackbar: https://cdn.bili33.top/npm/node-snackbar/src/js/snackbar.min.js
     # snackbar_css:
     translate: https://cdn.bili33.top/npm/js-heo@1.0.6/translate/tw_cn.js
     # twikoo:
-    typed: https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/typed.js/2.0.12/typed.min.js
+    typed: https://cdn.bili33.top/npm/typed.js/dist/typed.umd.js
     # utils:
-    valine: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/valine/1.4.16/Valine.min.js
+    valine: https://cdn.bili33.top/npm/valine/dist/Valine.min.js
     # waline_css:
     # waline_js:
