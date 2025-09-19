@@ -1187,7 +1187,7 @@ CDN:
     # gitalk:
     # gitalk_css:
     # giscus:
-    instantpage: https://cdn.bili33.top/npm/instant.page/instantpage.js
+    instantpage: https://cdn.bili33.top/npm/instant.page/instantpage.min.js
     # instantsearch:
     # katex:
     # katex_copytex:
