@@ -89,12 +89,6 @@ hexo.extend.helper.register('findArchivesTitle', function (page, menu, date) {
 hexo.extend.helper.register('getBgPath', function (path) {
   if (!path) return ''
 
-  // Random background
-  if (Array.isArray(path)) {
-    const i = Math.floor(Math.random() * path.length)
-    path = path[i]
-  }
-
   const absoluteUrlPattern = /^(?:[a-z][a-z\d+.-]*:)?\/\//i
   const relativeUrlPattern = /^(\.\/|\.\.\/|\/|[^/]+\/).*$/
   const colorPattern = /^(#|rgb|rgba|hsl|hsla)/i

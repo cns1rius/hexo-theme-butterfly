@@ -13,7 +13,17 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
     !=partial('includes/loading/index', {}, {cache: true})
 
     if theme.background
-      #web_bg(style=getBgPath(theme.background))
+      if !Array.isArray(theme.background)
+        #web_bg(style=getBgPath(theme.background))
+      else
+        #web_bg
+        - const bgStyleArr = theme.background.map(getBgPath)
+        script.
+          (function () {
+            const arr = !{JSON.stringify(bgStyleArr)}
+            const randomBgStyle = arr[Math.floor(Math.random() * arr.length)]
+            document.getElementById('web_bg').style = randomBgStyle
+          })()
 
     !=partial('includes/sidebar', {}, {cache: true})
 
