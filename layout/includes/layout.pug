@@ -14,15 +14,27 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
 
     if theme.background
       if !Array.isArray(theme.background)
-        #web_bg(style=getBgPath(theme.background))
+        #web_bg.bg-animation(style=getBgPath(theme.background))
       else
-        #web_bg
+        #web_bg.bg-animation
         - const bgStyleArr = theme.background.map(getBgPath)
         script.
-          (function () {
+          (() => {
             const arr = !{JSON.stringify(bgStyleArr)}
-            const randomBgStyle = arr[Math.floor(Math.random() * arr.length)]
-            document.getElementById('web_bg').style = randomBgStyle
+            const webBgDiv = document.getElementById('web_bg')
+
+            function setRandomBg() {
+              webBgDiv.style = arr[Math.floor(Math.random() * arr.length)]
+            }
+
+            setRandomBg()
+            document.addEventListener('pjax:send', () => {
+              setRandomBg()
+              // Reload CSS animation
+              webBgDiv.classList.remove('bg-animation')
+              void webBgDiv.offsetWidth
+              webBgDiv.classList.add('bg-animation')
+            })
           })()
 
     !=partial('includes/sidebar', {}, {cache: true})
