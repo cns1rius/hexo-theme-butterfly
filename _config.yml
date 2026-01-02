@@ -1087,9 +1087,11 @@ electric_clock:
   loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif #加载动画自定义
   clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css
   clock_js: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js
-  ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
+  ip_api: https://na6e49wwgr.re.qweatherapi.com/simple/static/js/he-simple-common.js?v=2.0
+  qweather_api_host: na6e49wwgr.re.qweatherapi.com
   qweather_key: 9c502e878eb34e7caeccfb19d203cdf5 # 和风天气key
-  gaud_map_key: dab28708d5a2e1a3a213f8ab055e2f03 # 高得地图web服务key
+  # ip_api_key: 3f7b7b49b710711e # https://api.nsuuu.com/admin
+  # gaud_map_key: dab28708d5a2e1a3a213f8ab055e2f03 # 高得地图web服务key
   default_rectangle: false # 开启后将一直显示rectangle位置的天气，否则将获取访问者的地理位置与天气
   rectangle: 113.34532,23.15624 # 获取访问者位置失败时会显示该位置的天气，同时该位置为开启default_rectangle后的位置
 
@@ -1138,7 +1140,7 @@ inject:
     - <script async data-pjax src="/custom/rightmenu.js"></script>
     - <script defer src="https://cdn.bili33.top/npm/jquery@latest/dist/jquery.min.js"></script>
     - <div class="aplayer data-pjax aplayer-fixed no-destroy aplayer-withlist" data-id="7783506601" data-server="netease" data-type="playlist" data-fixed="true" data-mutex="true" data-mini="true" data-listfolded="true" data-preload="none" data-theme="var(--lyx-theme)" data-order="random" data-volume="0.5" style="z-index:514; font-family:var(--global-font),KyoukashoProL,-apple-system, IBM Plex Mono ,monosapce,&quot;微软雅黑&quot;, sans-serif;"></div>
-    - <script defer data-pjax src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script>
+    # - <script defer data-pjax src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script>
     - <script defer data-pjax src="/custom/readPercent.js"></script>
 
 # CDN Settings
