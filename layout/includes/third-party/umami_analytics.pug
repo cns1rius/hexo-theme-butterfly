@@ -5,11 +5,21 @@
 
 script.
   (() => {
+    const botPattern = /(Googlebot|Baiduspider|bingbot|Bytespider|360Spider|Sogou|YisouSpider|YandexBot|Yeti|Applebot|Slurp|DuckDuckBot|AhrefsBot|DotBot|SemrushBot|MJ12bot|PetalBot|GPTBot|OAI-SearchBot|ClaudeBot|Mediapartners-Google|AdsBot-Google|Diffbot|spider|Crawler|bot)/i
     const option = !{JSON.stringify(option)}
     const config = !{JSON.stringify(UV_PV)}
 
     const runTrack = () => {
-      umami.track(props => ({ ...props, url: window.location.pathname + window.location.search + window.location.hash, title: GLOBAL_CONFIG_SITE.title }))
+      const botMatch = navigator.userAgent.match(botPattern)[0]
+      if (botMatch) {
+        const targetPath = (window.location.pathname + window.location.search + window.location.hash).substring(0, 499)
+        umami.track('Crawler', { 
+          bot: botMatch,
+          path: targetPath 
+        })
+      } else {
+        umami.track(props => ({ ...props, url: window.location.pathname + window.location.search + window.location.hash, title: GLOBAL_CONFIG_SITE.title }))
+      }
     }
 
     const loadUmamiJS = () => {
@@ -36,6 +46,7 @@ script.
     }
 
     const insertData = async () => {
+      if (botPattern.test(navigator.userAgent)) return
       try {
         if (GLOBAL_CONFIG_SITE.pageType === 'post' && config.page_pv) {
           const pagePV = document.getElementById('umamiPV')
@@ -65,3 +76,71 @@ script.
     loadUmamiJS()
     insertData()
   })()
+
+//- - let { serverURL, website_id, option, UV_PV } = theme.umami_analytics
+//- - const isServerURL = !!serverURL
+//- - const baseURL = serverURL ? serverURL.replace(/\/$/, '') : 'https://cloud.umami.is'
+//- - const apiUrl = serverURL ? serverURL.replace(/\/$/, '') + '/api' : 'https://api.umami.is/v1'
+
+//- script.
+//-   (() => {
+//-     const option = !{JSON.stringify(option)}
+//-     const config = !{JSON.stringify(UV_PV)}
+
+//-     const runTrack = () => {
+//-       umami.track(props => ({ ...props, url: window.location.pathname + window.location.search + window.location.hash, title: GLOBAL_CONFIG_SITE.title }))
+//-     }
+
+//-     const loadUmamiJS = () => {
+//-       btf.getScript('!{baseURL}/script.js', {
+//-         'data-website-id': '!{website_id}',
+//-         'data-auto-track': 'false',
+//-         ...option
+//-       }).then(runTrack)
+//-     }
+
+//-     const getData = async (isPost) => {
+//-       const now = Date.now()
+//-       const keyUrl = isPost ? `&url=${window.location.pathname}` : ''
+//-       const headerList = { 'Accept': 'application/json' }
+//-       if (!{isServerURL}) headerList['Authorization'] = `Bearer ${config.token}`
+//-       else headerList['x-umami-api-key'] = config.token
+//-       const res = await fetch(`!{apiUrl}/websites/!{website_id}/stats?startAt=0000000000&endAt=${now}${keyUrl}`, {
+//-         method: "GET",
+//-         mode: "cors",
+//-         cache: "default",
+//-         headers: headerList
+//-       })
+//-       return await res.json()
+//-     }
+
+//-     const insertData = async () => {
+//-       try {
+//-         if (GLOBAL_CONFIG_SITE.pageType === 'post' && config.page_pv) {
+//-           const pagePV = document.getElementById('umamiPV')
+//-           if (pagePV) {
+//-             const data = await getData(true)
+//-             pagePV.textContent = data.pageviews.value
+//-           }
+//-         } else {
+//-           const data = (config.site_uv || config.site_pv) && await getData()
+//-           if (config.site_uv) {
+//-             const siteUV = document.getElementById('umami-site-uv')
+//-             if (siteUV) siteUV.textContent = data.visitors.value
+//-           }
+//-           if (config.site_pv) {
+//-             const sitePV = document.getElementById('umami-site-pv')
+//-             if (sitePV) sitePV.textContent = data.pageviews.value
+//-           }
+//-         }
+//-       } catch (e) {
+//-         console.error('Failed to load Umami Analytics:', e)
+//-       }
+//-     }
+
+//-     btf.addGlobalFn('pjaxComplete', runTrack, 'umami_analytics_run_track')
+//-     btf.addGlobalFn('pjaxComplete', insertData, 'umami_analytics_insert')
+
+//-     loadUmamiJS()
+//-     insertData()
+//-   })()
