@@ -1,24 +1,28 @@
 @font-face {
   font-family: "xingshu";
-  src: url("/css/相遇的那一刻开始2.ttf") format("truetype");
+  src: url("https://cdn.bili33.top/gh/cns1rius/cns1rius.github.io/css/相遇的那一刻开始2.ttf") format("truetype");
+  /* font-display: fallback; */
+}
+
+@font-face {
+  font-family: "lxwk";
+  src: url("https://cdn.bili33.top/gh/cns1rius/cns1rius.github.io/css/LXGWWenKai-Medium.ttf") format("truetype");
   /* font-display: fallback; */
 }
 
 body {
-  font-family: xingshu, -apple-system, IBM Plex Mono, monosapce, "微软雅黑",
+  font-family: xingshu, lxwk, -apple-system, IBM Plex Mono, monosapce, "微软雅黑",
     sans-serif;
-  /* font-weight: 600; */
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 15.5px;
 }
 
 @font-face {
-  font-family: "iconfont"; /* Project id 3903417 */
-  src: url("//at.alicdn.com/t/c/font_3903417_6ob0z6ecywv.woff2?t=1676717539136")
-      format("woff2"),
-    url("//at.alicdn.com/t/c/font_3903417_6ob0z6ecywv.woff?t=1676717539136")
-      format("woff"),
-    url("//at.alicdn.com/t/c/font_3903417_6ob0z6ecywv.ttf?t=1676717539136")
-      format("truetype");
+  font-family: "iconfont";
+  /* Project id 3903417 */
+  src: url("//at.alicdn.com/t/c/font_3903417_6ob0z6ecywv.woff2?t=1676717539136") format("woff2"),
+    url("//at.alicdn.com/t/c/font_3903417_6ob0z6ecywv.woff?t=1676717539136") format("woff"),
+    url("//at.alicdn.com/t/c/font_3903417_6ob0z6ecywv.ttf?t=1676717539136") format("truetype");
 }
 
 .iconfont {
