@@ -10,7 +10,7 @@ script.
     const config = !{JSON.stringify(UV_PV)}
 
     const runTrack = () => {
-      const botMatch = navigator.userAgent.match(botPattern)[0]
+      const botMatch = navigator.userAgent.match(botPattern)?.[0]
       console.log("[!] 疑似爬虫：" + botMatch)
       if (botMatch) {
         const targetPath = (window.location.pathname + window.location.search + window.location.hash).substring(0, 499)
