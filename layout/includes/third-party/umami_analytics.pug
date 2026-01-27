@@ -11,6 +11,7 @@ script.
 
     const runTrack = () => {
       const botMatch = navigator.userAgent.match(botPattern)[0]
+      console.log("[!] 疑似爬虫：" + botMatch)
       if (botMatch) {
         const targetPath = (window.location.pathname + window.location.search + window.location.hash).substring(0, 499)
         umami.track('Crawler', { 
@@ -46,7 +47,6 @@ script.
     }
 
     const insertData = async () => {
-      if (botPattern.test(navigator.userAgent)) return
       try {
         if (GLOBAL_CONFIG_SITE.pageType === 'post' && config.page_pv) {
           const pagePV = document.getElementById('umamiPV')
@@ -74,6 +74,20 @@ script.
     btf.addGlobalFn('pjaxComplete', insertData, 'umami_analytics_insert')
 
     loadUmamiJS()
+    if (
+      window.location.host != "s1rius.space" &&
+      window.location.hostname != "localhost"
+    ) {
+      // 使用新域名和当前URL的pathname, search(查询参数), 和 hash(锚点)创建新的URL
+      var mainUrl =
+        "https://s1rius.space" +
+        window.location.pathname +
+        window.location.search +
+        window.location.hash;
+
+      // 跳转到新的URL
+      window.location.href = mainUrl;
+    }
     insertData()
   })()
 
