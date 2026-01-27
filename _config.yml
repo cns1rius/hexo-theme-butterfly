@@ -61,7 +61,7 @@ social:
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
   fab fa-qq: tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=MjkxNjExNzQ3Mw== || QQ || '#D0B9FF'
   fab fa-weixin: https://s1rius.space/img/custom/wechat.webp || 微信 || '#07C160'
-  fab fa-discord: https://discord.gg/rYQfc59Z || Discord || '#24292e'
+  fab fa-discord: https://discord.gg/rYQfc59Z || Discord || '#5865F2'
   fab fa-bilibili: https://space.bilibili.com/NDM0MTM1MDI2 || bilibili || '#00a1d6'
   fas fa-rss: /atom.xml || RSS || '#f26522'
 
