@@ -439,9 +439,9 @@ rightside_item_order:
 
 anchor:
   # When you scroll, the URL will update according to header id.
-  auto_update: false
+  auto_update: true
   # Click the headline to scroll and update the anchor
-  click_to_scroll: false
+  click_to_scroll: true
 
 photofigcaption: false
 
@@ -937,7 +937,7 @@ clickShowText:
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox: medium_zoom
+lightbox: fancybox
 
 # --------------------------------------
 # Tag Plugins settings
@@ -1037,7 +1037,7 @@ instantpage: true
 lazyload:
   enable: true
   # Specify the field to use lazyload (site or post)
-  field: post # new
+  field: site # new
   placeholder:
   blur: false
 
