@@ -1035,7 +1035,7 @@ instantpage: true
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: true
+  enable: false
   # Specify the field to use lazyload (site or post)
   field: site # new
   placeholder:
@@ -1135,7 +1135,7 @@ inject:
     # - <link rel="stylesheet" href="/css/rightmenu.css"> # </link 自定义右键 https://yisous.xyz/posts/11eb4aac//>
   bottom:
     - <script defer data-pjax src="/custom/welcome.js"></script>
-    - <script defer data-pjax src="/custom/nav.js"></script>
+    - <script defer src="/custom/nav.js"></script>
     - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
     - <script defer data-pjax src="/custom/summary.js"></script>
     - <script async data-pjax src="/custom/rightmenu.js"></script>
