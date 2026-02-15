@@ -32,18 +32,31 @@ script.
     }
 
     const getData = async (isPost) => {
-      const now = Date.now()
-      const keyUrl = isPost ? `&url=${window.location.pathname}` : ''
-      const headerList = { 'Accept': 'application/json' }
-      if (!{isServerURL}) headerList['Authorization'] = `Bearer ${config.token}`
-      else headerList['x-umami-api-key'] = config.token
-      const res = await fetch(`!{apiUrl}/websites/!{website_id}/stats?startAt=0000000000&endAt=${now}${keyUrl}`, {
-        method: "GET",
-        mode: "cors",
-        cache: "default",
-        headers: headerList
-      })
-      return await res.json()
+      try {
+        const now = Date.now()
+        const keyUrl = isPost ? `&url=${window.location.pathname}&path=${window.location.pathname}` : ''
+        const headerList = { 'Accept': 'application/json' }
+
+        if (!{isServerURL}) {
+          headerList['Authorization'] = `Bearer ${config.token}`
+        } else {
+          headerList['x-umami-api-key'] = config.token
+        }
+
+        const res = await fetch(`!{apiUrl}/websites/!{website_id}/stats?startAt=0000000000&endAt=${now}${keyUrl}`, {
+          method: "GET",
+          headers: headerList
+        })
+
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`)
+        }
+
+        return await res.json()
+      } catch (error) {
+        console.error('Umami Analytics: Failed to fetch data', error)
+        throw error
+      }
     }
 
     const insertData = async () => {
@@ -52,21 +65,37 @@ script.
           const pagePV = document.getElementById('umamiPV')
           if (pagePV) {
             const data = await getData(true)
-            pagePV.textContent = data.pageviews.value
-          }
-        } else {
-          const data = (config.site_uv || config.site_pv) && await getData()
-          if (config.site_uv) {
-            const siteUV = document.getElementById('umami-site-uv')
-            if (siteUV) siteUV.textContent = data.visitors.value
-          }
-          if (config.site_pv) {
-            const sitePV = document.getElementById('umami-site-pv')
-            if (sitePV) sitePV.textContent = data.pageviews.value
+            if (data && data.pageviews) {
+              pagePV.textContent = typeof data.pageviews.value !== 'undefined' ? data.pageviews.value : data.pageviews
+            } else {
+              console.warn('Umami Analytics: Invalid page view data received')
+            }
           }
         }
-      } catch (e) {
-        console.error('Failed to load Umami Analytics:', e)
+
+        if (config.site_uv || config.site_pv) {
+          const data = await getData(false)
+
+          if (config.site_uv) {
+            const siteUV = document.getElementById('umami-site-uv')
+            if (siteUV && data && data.visitors) {
+              siteUV.textContent = typeof data.visitors.value !== 'undefined' ? data.visitors.value : data.visitors
+            } else if (siteUV) {
+              console.warn('Umami Analytics: Invalid site UV data received')
+            }
+          }
+
+          if (config.site_pv) {
+            const sitePV = document.getElementById('umami-site-pv')
+            if (sitePV && data && data.pageviews) {
+              sitePV.textContent = typeof data.pageviews.value !== 'undefined' ? data.pageviews.value : data.pageviews
+            } else if (sitePV) {
+              console.warn('Umami Analytics: Invalid site PV data received')
+            }
+          }
+        }
+      } catch (error) {
+        console.error('Umami Analytics: Failed to insert data', error)
       }
     }
 

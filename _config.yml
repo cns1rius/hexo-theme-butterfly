@@ -464,9 +464,9 @@ wordcount:
 
 # Busuanzi count for PV / UV in site
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # --------------------------------------
 # Math
@@ -724,9 +724,9 @@ umami_analytics:
   website_id: edb580f9-c557-47e7-b93d-dbd1c97d2c5e
   option:
   UV_PV:
-    site_uv: false
-    site_pv: false
-    page_pv: false
+    site_uv: true
+    site_pv: true
+    page_pv: true
     # Umami Cloud (API key) / self-hosted Umami (token)
     token: q7VGWkCYOir0FzMc6BH3jSZUTdxcJfkA
 

@@ -1,16 +1,10 @@
 <!--
- * @Author: s1rius
- * @Date: 2025-02-23 22:02:34
- * @LastEditTime: 2025-04-06 17:52:09
- * @Description: https://s1rius.space/
--->
-<!--
     CyberChef - The Cyber Swiss Army Knife
 
-    @copyright Crown Copyright 2016-2025
+    @copyright Crown Copyright 2016-2026
     @license Apache-2.0
 
-      Copyright 2016-2025 Crown Copyright
+      Copyright 2016-2026 Crown Copyright
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -26,14 +20,14 @@
 
     Modified by Raka-loah@github for zh-CN i18n and renamed.
 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hans" class="classic">
   <head>
     <meta charset="UTF-8" />
     <title>SRK Toolbox</title>
     <meta
       name="copyright"
-      content="Crown Copyright 2016 (CyberChef) Raka-loah@github Copyright 2024 (Modifications)-2025"
+      content="Crown Copyright 2016 (CyberChef) Raka-loah@github Copyright 2024 (Modifications)-2026"
     />
     <meta
       name="description"
@@ -70,22 +64,23 @@
         "正在把emacs和vim符号链接到ed...",
         "正在训练分支预测...",
         "正在对缓存命中计时...",
-        "正在猜你要执行什么操作...",
-        "正在添加使用了大型语言模型的错觉...",
+        "正在分支预测你要执行什么操作...",
+        "正在添加大语言模型幻觉...",
         "解压恶意软件中（吓你的）...",
+        "正在载入第114514个功能...",
       ];
       for (let e = loadingMsgs.length - 1; e > 0; --e) {
         var j = Math.floor(Math.random() * (e + 1)),
           temp = loadingMsgs[e];
-        (loadingMsgs[e] = loadingMsgs[j]), (loadingMsgs[j] = temp);
+        ((loadingMsgs[e] = loadingMsgs[j]), (loadingMsgs[j] = temp));
       }
       function changeLoadingMsg() {
         var e = loadingMsgs.shift();
         loadingMsgs.push(e);
         try {
           var n = document.getElementById("preloader-msg");
-          n.classList.contains("loading") || n.classList.add("loading"),
-            (n.innerHTML = e);
+          (n.classList.contains("loading") || n.classList.add("loading"),
+            (n.innerHTML = e));
         } catch (e) {
           setTimeout(changeLoadingMsg, 1e3);
         }
@@ -113,8 +108,8 @@
           (e.error ? "\n错误： " + e.error : "") +
           "\nUser-Agent： " +
           navigator.userAgent +
-          "\nSRK Toolbox版本： 10.19.4";
-        clearInterval(window.loadingMsgsInt),
+          "\nSRK Toolbox版本： 10.21.0";
+        (clearInterval(window.loadingMsgsInt),
           document.getElementById("preloader").remove(),
           document.getElementById("preloader-msg").remove(),
           (document.getElementById("preloader-error").innerHTML =
@@ -122,14 +117,14 @@
             n(navigator.userAgent) +
             "<br><br><pre>" +
             n(o) +
-            "</pre>");
+            "</pre>"));
       }
-      changeLoadingMsg(),
+      (changeLoadingMsg(),
         (window.loadingMsgsInt = setInterval(
           changeLoadingMsg,
-          2e3 * Math.random() + 1500
+          2e3 * Math.random() + 1500,
         )),
-        window.addEventListener("error", loadingErrorHandler);
+        window.addEventListener("error", loadingErrorHandler));
     </script>
     <script async src="/custom/ban.js"></script>
     <script defer="defer" src="assets/main.js"></script>
@@ -154,7 +149,7 @@
     <div id="content-wrapper">
       <div id="banner" class="row">
         <div class="col" style="text-align: left; padding-left: 10px">
-          <span>版本 10.19.4</span>
+          <span>版本 10.21.0</span>
         </div>
         <div class="col-md-6" id="notice-wrapper">
           <span id="notice"
@@ -948,8 +943,7 @@
               alt="SRK Toolbox Logo"
             />
             <p class="subtext">
-              基于CyberChef版本： 10.19.4<br />编译时间： 08/01/2025 08:49:40
-              UTC
+              版本： 10.21.0<br />编译时间： 09/02/2026 08:59:55 UTC
             </p>
             <p>
               <strong>S</strong>miling <strong>R</strong>a<strong>K</strong>a
@@ -961,7 +955,7 @@
               >
             </p>
             <p>
-              Based on CyberChef &copy; Crown Copyright 2016-2025. Released
+              Based on CyberChef &copy; Crown Copyright 2016-2026. Released
               under the Apache Licence, Version 2.0.
             </p>
             <ul class="nav nav-tabs" role="tablist">
@@ -1034,8 +1028,8 @@
                 >
                 <div class="collapse" id="faq-examples">
                   <p>
-                    SRK Toolbox有<span class="num-ops">数百种</span
-                    >操作可以使用，可以方便地搞定很多编解码操作。以下是一些例子：
+                    SRK Toolbox有<span class="num-ops">数百</span
+                    >个操作可以使用，可以方便地搞定很多编解码操作。以下是一些例子：
                   </p>
                   <ul>
                     <li>
@@ -1338,20 +1332,20 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  CONTENT
+                  内容
                 </button>
                 <div class="dropdown-menu toggle-dropdown">
                   <a
                     class="dropdown-item"
                     id="input-filter-content"
                     title="内容"
-                    >Content</a
+                    >内容</a
                   >
                   <a
                     class="dropdown-item"
                     id="input-filter-filename"
                     title="文件名"
-                    >Filename</a
+                    >文件名</a
                   >
                 </div>
               </div>
@@ -1518,22 +1512,22 @@
               如果你想下载一份离线版用于没网可上的场景，你可以在下方下载一份包含整个程序的ZIP压缩包。可以直接在本地打开使用，或者部署到Web服务器，无需额外设置。
             </p>
             <p>注意：离线版没有自动更新功能，新版需要自行手动更新。</p>
-            <h6>SRK Toolbox v10.19.4</h6>
+            <h6>SRK Toolbox v10.21.0</h6>
             <ul>
-              <li>编译时间： 08/01/2025 08:49:40 UTC</li>
+              <li>编译时间： 09/02/2026 08:59:55 UTC</li>
               <li>
                 Changelog：
                 <a
-                  href="https://github.com/Raka-loah/SRK-Toolbox/blob/v10.19.4/CHANGELOG.md"
+                  href="https://github.com/Raka-loah/SRK-Toolbox/blob/v10.21.0/CHANGELOG.md"
                   >点此</a
                 >
               </li>
-              <li>&copy; Crown Copyright 2016 / Raka-loah@github 2023-2025</li>
+              <li>&copy; Crown Copyright 2016 / Raka-loah@github 2023-2026</li>
               <li>Released under the Apache Licence, Version 2.0</li>
               <li>SHA256 hash: DOWNLOAD_HASH_PLACEHOLDER</li>
             </ul>
             <a
-              href="SRK_Toolbox_v10.19.4.zip"
+              href="SRK_Toolbox_v10.21.0.zip"
               download
               class="btn btn-outline-primary"
               >下载离线版ZIP压缩包</a
