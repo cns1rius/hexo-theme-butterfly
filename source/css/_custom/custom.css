@@ -248,6 +248,10 @@ a:hover {
   text-align: right !important;
 }
 
+.aplayer .aplayer-lrc p {
+  font-size: 6px;
+}
+
 .aplayer.aplayer-fixed {
   background-color: #0000;
 }
@@ -331,8 +335,13 @@ a:hover {
 }
 
 .aplayer {
-  font-family: var(--global-font), -apple-system, IBM Plex Mono, monosapce,
-    "微软雅黑", sans-serif;
+  font-family:
+    var(--global-font),
+    -apple-system,
+    IBM Plex Mono,
+    monosapce,
+    "微软雅黑",
+    sans-serif;
 }
 
 .aplayer.aplayer-fixed .aplayer-icon-lrc {
