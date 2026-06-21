@@ -231,8 +231,8 @@ reward:
   enable: true
   text:
   QR_code:
-    - img: https://cdn.bili33.top/gh/cns1rius/cns1rius/pay.jpg
-      link: https://cdn.bili33.top/gh/cns1rius/cns1rius/pay.jpg
+    - img: https://cdn.jsdmirror.com/gh/cns1rius/cns1rius/pay.jpg
+      link: https://cdn.jsdmirror.com/gh/cns1rius/cns1rius/pay.jpg
       text: WeChat or Alipay
 
 # Post edit
@@ -827,7 +827,7 @@ preloader:
   # 2. pace (progress bar)
   source: 2
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: https://cdn.bili33.top/npm/pace-js@latest/pace-theme-default.min.css
+  pace_css_url: https://cdn.jsdmirror.com/npm/pace-js@latest/pace-theme-default.min.css
 
 # Page Transition
 enter_transitions: true
@@ -1076,7 +1076,7 @@ css_prefix: true
 # electric_clock (安知鱼电子钟)
 # see https://anzhiy.cn/posts/fc18.html
 electric_clock:
-  enable: true # 开关
+  enable: false # 开关
   priority: 5 #过滤器优先权
   enable_page: all # 应用页面
   exclude:
@@ -1118,25 +1118,18 @@ swiper:
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
-<<<<<<< HEAD
     - <script defer data-pjax src="/custom/ban.js"></script>
-    - <link rel="preload" href="https://cdn.bili33.top/npm/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-    - <link rel="preload" href="https://cdn.bili33.top/npm/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    - <link rel="preload" href="https://cdn.jsdmirror.com/npm/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    - <link rel="preload" href="https://cdn.jsdmirror.com/npm/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
     - <link rel="preload" href="/css/相遇的那一刻开始2.ttf" as="font" type="font/ttf" crossorigin>
-=======
-    - <script data-pjax src="/custom/ban.js"></script>
-    - <link rel="preload" href="https://cdn.bili33.top/npm/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-    - <link rel="preload" href="https://cdn.bili33.top/npm/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-    - <link rel="preload" href="/css/相遇的那一刻开始2.ttf" as="font" type="font/woff2" crossorigin>
->>>>>>> 9035bc3cd5a69d04b9b8cf44cc379f8b9bf894ab
-    - <link rel="preload" as="image" href="https://cdn.bili33.top/gh/cns1rius/cns1rius.github.io/img/custom/springBg.webp" type="image/webp">
-    - <link rel="preload" as="image" href="https://cdn.bili33.top/gh/cns1rius/cns1rius.github.io/img/custom/avatar.webp" type="image/webp">
+    - <link rel="preload" as="image" href="https://cdn.jsdmirror.com/gh/cns1rius/cns1rius.github.io/img/custom/springBg.webp" type="image/webp">
+    - <link rel="preload" as="image" href="https://cdn.jsdmirror.com/gh/cns1rius/cns1rius.github.io/img/custom/avatar.webp" type="image/webp">
     - <link rel="preload" href="/custom/nav.js" as="script">
-    - <link rel="preload" href="https://cdn.bili33.top/npm/typed.js/dist/typed.umd.js" as="script">
+    - <link rel="preload" href="https://cdn.jsdmirror.com/npm/typed.js/dist/typed.umd.js" as="script">
     - <link rel="prefetch" href="/custom/footer.js" as="script">
     - <link rel="prefetch" href="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" as="script">
     - <link rel="prefetch" href="/custom/welcome.js" as="script">
-    - <link rel="prefetch" as="image" href="https://cdn.bili33.top/gh/cns1rius/cns1rius.github.io/img/custom/sakura.svg" type="image/svg+xml">
+    - <link rel="prefetch" as="image" href="https://cdn.jsdmirror.com/gh/cns1rius/cns1rius.github.io/img/custom/sakura.svg" type="image/svg+xml">
     - <meta name="msvalidate.01" content="6994F478B9346FDEB76593EE5F53A3EB" />
     - <meta name="baidu-site-verification" content="codeva-TEqPHvxz8H" />
     - <meta name="google-site-verification" content="PhNm04OAt29b44VWOP0BiUatmAjYjyc9ao7CcqQO4rY" />
@@ -1148,7 +1141,7 @@ inject:
     - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
     - <script defer data-pjax src="/custom/summary.js"></script>
     - <script async data-pjax src="/custom/rightmenu.js"></script>
-    - <script defer src="https://cdn.bili33.top/npm/jquery@latest/dist/jquery.min.js"></script>
+    - <script defer src="https://cdn.jsdmirror.com/npm/jquery@latest/dist/jquery.min.js"></script>
     - <div class="aplayer data-pjax aplayer-fixed no-destroy aplayer-withlist" data-id="7783506601" data-server="netease" data-type="playlist" data-fixed="true" data-mutex="true" data-mini="true" data-listfolded="true" data-theme="var(--lyx-theme)" data-volume="0.5" style="z-index:514; font-family:var(--global-font),KyoukashoProL,-apple-system, IBM Plex Mono ,monosapce,&quot;微软雅黑&quot;, sans-serif;"></div>
     # - <script defer data-pjax src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script>
     - <script defer data-pjax src="/custom/readPercent.js"></script>
@@ -1161,22 +1154,22 @@ CDN:
   # Note: Dev version can only use 'local' for internal scripts
   # Note: When setting third-party scripts to 'local', you need to install hexo-butterfly-extjs
   internal_provider: local
-  third_party_provider: jsdelivr # 已改为 cdn.bili33.top
+  third_party_provider: jsdelivr # 已改为 cdn.jsdmirror.com
 
   # Add version number to url, true or false
   version: false
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://cdn.bili33.top/npm/${name}${verType}/${min_file}
+  custom_format: https://cdn.jsdmirror.com/npm/${name}${verType}/${min_file}
 
   option:
     # abcjs_basic_js:
     # activate_power_mode:
     # algolia_js:
     # algolia_search:
-    aplayer_css: https://cdn.bili33.top/npm/aplayer@latest/dist/APlayer.min.css
-    aplayer_js: https://cdn.bili33.top/npm/aplayer@latest/dist/APlayer.min.js
+    aplayer_css: https://cdn.jsdmirror.com/npm/aplayer@latest/dist/APlayer.min.css
+    aplayer_js: https://cdn.jsdmirror.com/npm/aplayer@latest/dist/APlayer.min.js
     # artalk_css:
     # artalk_js:
     # blueimp_md5:
@@ -1199,30 +1192,30 @@ CDN:
     # gitalk:
     # gitalk_css:
     # giscus:
-    instantpage: https://cdn.bili33.top/npm/instant.page/instantpage.min.js
+    instantpage: https://cdn.jsdmirror.com/npm/instant.page/instantpage.min.js
     # instantsearch:
     # katex:
     # katex_copytex:
-    lazyload: https://cdn.bili33.top/npm/vanilla-lazyload/dist/lazyload.iife.min.js
+    lazyload: https://cdn.jsdmirror.com/npm/vanilla-lazyload/dist/lazyload.iife.min.js
     # local_search:
     # main:
     # main_css:
     # mathjax:
-    medium_zoom: https://cdn.bili33.top/npm/medium-zoom/dist/medium-zoom.min.js
+    medium_zoom: https://cdn.jsdmirror.com/npm/medium-zoom/dist/medium-zoom.min.js
     # mermaid:
     meting_js: /custom/Meting.min.js
     # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
-    pjax: https://cdn.bili33.top/npm/pjax/pjax.min.js
+    pjax: https://cdn.jsdmirror.com/npm/pjax/pjax.min.js
     sharejs: https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js
     sharejs_css: https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css
-    snackbar: https://cdn.bili33.top/npm/node-snackbar/src/js/snackbar.min.js
+    snackbar: https://cdn.jsdmirror.com/npm/node-snackbar/src/js/snackbar.min.js
     # snackbar_css:
-    translate: https://cdn.bili33.top/npm/js-heo@1.0.6/translate/tw_cn.js
+    translate: https://cdn.jsdmirror.com/npm/js-heo@1.0.6/translate/tw_cn.js
     # twikoo:
-    typed: https://cdn.bili33.top/npm/typed.js/dist/typed.umd.js
+    typed: https://cdn.jsdmirror.com/npm/typed.js/dist/typed.umd.js
     # utils:
-    valine: https://cdn.bili33.top/npm/valine/dist/Valine.min.js
+    valine: https://cdn.jsdmirror.com/npm/valine/dist/Valine.min.js
     # waline_css:
     # waline_js:

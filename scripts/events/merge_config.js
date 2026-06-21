@@ -129,6 +129,12 @@ hexo.extend.filter.register(
         custom_text: null,
         copyright: true,
       },
+      ai_summary: {
+        enable: false,
+        title: "AI Summary",
+        loadingText: "Loading...",
+        modelName: null,
+      },
       aside: {
         enable: true,
         hide: false,
