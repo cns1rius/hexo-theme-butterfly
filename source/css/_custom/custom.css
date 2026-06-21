@@ -195,7 +195,9 @@ div#archive {
 center#name-container {
   position: absolute !important;
   width: fit-content !important;
-  left: 46.2% !important;
+  max-width: calc(100% - 320px);
+  left: 50% !important;
+  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 768px) {

@@ -4,14 +4,8 @@
   /* font-display: fallback; */
 }
 
-@font-face {
-  font-family: "lxwk";
-  src: url("https://cdn.bili33.top/gh/cns1rius/cns1rius.github.io/css/LXGWWenKai-Medium.ttf") format("truetype");
-  /* font-display: fallback; */
-}
-
 body {
-  font-family: xingshu, lxwk, -apple-system, IBM Plex Mono, monosapce, "微软雅黑",
+  font-family: xingshu, -apple-system, IBM Plex Mono, monosapce, "微软雅黑",
     sans-serif;
   font-weight: 400;
   font-size: 15.5px;
