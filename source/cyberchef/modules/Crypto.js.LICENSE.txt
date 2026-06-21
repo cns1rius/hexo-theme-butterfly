@@ -5,7 +5,16 @@
  * @license  MIT
  */
 
-/*! https://mths.be/punycode v1.3.2 by @mathias */
+/*! (c) Stefan Thomas | https://github.com/bitcoinjs/bitcoinjs-lib
+ */
+
+/*! (c) Tom Wu | http://www-cs-students.stanford.edu/~tjw/jsbn/
+ */
+
+/*! Mike Samuel (c) 2009 | code.google.com/p/json-sans-eval
+ */
+
+/*! https://mths.be/punycode v1.4.1 by @mathias */
 
 /*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
 
@@ -16,6 +25,14 @@
 /**
  * @author Tan Zhen Yong [tzy@beyondthesprawl.com]
  * @copyright Crown Copyright 2019
+ * @license Apache-2.0
+ *
+ * Modified by Raka-loah@github for zh-CN i18n
+ */
+
+/**
+ * @author Thomas Weißschuh [thomas@t-8ch.de]
+ * @copyright Crown Copyright 2023
  * @license Apache-2.0
  *
  * Modified by Raka-loah@github for zh-CN i18n
@@ -33,6 +50,14 @@
  * @author d98762625 [d98762625@gmail.com]
  * @copyright Crown Copyright 2019
  * @license Apache-2.0
+ */
+
+/**
+ * @author flakjacket95 [dflack95@gmail.com]
+ * @copyright Crown Copyright 2024
+ * @license Apache-2.0
+ *
+ * Modified by Raka-loah@github
  */
 
 /**
@@ -111,12 +136,6 @@
  * @license Apache-2.0
  *
  * Modified by Raka-loah@github for zh-CN i18n
- */
-
-/**
- * @author n1474335 [n1474335@gmail.com]
- * @copyright Crown Copyright 2016
- * @license Apache-2.0
  */
 
 /**
@@ -203,7 +222,23 @@
 
 /**
  * @author n1474335 [n1474335@gmail.com]
+ * @copyright Crown Copyright 2023
+ * @license Apache-2.0
+ *
+ * Modified by Raka-loah@github for zh-CN i18n
+ */
+
+/**
+ * @author n1474335 [n1474335@gmail.com]
  * @copyright Crown Copyright 2024
+ * @license Apache-2.0
+ *
+ * Modified by Raka-loah@github for zh-CN i18n
+ */
+
+/**
+ * @author r4mos [2k95ljkhg@mozmail.com]
+ * @copyright Crown Copyright 2025
  * @license Apache-2.0
  *
  * Modified by Raka-loah@github for zh-CN i18n
@@ -240,10 +275,10 @@
 /**
  * CyberChef - The Cyber Swiss Army Knife
  *
- * @copyright Crown Copyright 2016-2025
+ * @copyright Crown Copyright 2016-2026
  * @license Apache-2.0
  *
- *   Copyright 2016-2025 Crown Copyright
+ *   Copyright 2016-2026 Crown Copyright
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -295,6 +330,16 @@
  */
 
 /**
+ * Hexadecimal functions.
+ *
+ * @author n1474335 [n1474335@gmail.com]
+ * @copyright Crown Copyright 2016
+ * @license Apache-2.0
+ *
+ * Modified by Raka-loah@github for zh-CN i18n
+ */
+
+/**
  * JA4 resources.
  *
  * @author n1474335 [n1474335@gmail.com]
@@ -343,16 +388,6 @@
  * @license Apache-2.0
  *
  * Modified by Raka-loah@github for zh-CN i18n
- */
-
-/**
- * [js-crc]{@link https://github.com/emn178/js-crc}
- *
- * @namespace crc
- * @version 0.2.0
- * @author Chen, Yi-Cyuan [emn178@gmail.com]
- * @copyright Chen, Yi-Cyuan 2015-2017
- * @license MIT
  */
 
 /**
