@@ -1121,7 +1121,7 @@ inject:
     - <script defer data-pjax src="/custom/ban.js"></script>
     - <link rel="preload" href="https://cdn.bili33.top/npm/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
     - <link rel="preload" href="https://cdn.bili33.top/npm/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-    - <link rel="preload" href="/css/相遇的那一刻开始2.ttf" as="font" type="font/ttf" crossorigin>
+    - <link rel="preload" href="https://cdn.bili33.top/gh/cns1rius/cns1rius.github.io/css/相遇的那一刻开始.TTF" as="font" type="font/ttf" crossorigin>
     - <link rel="preload" as="image" href="https://cdn.bili33.top/gh/cns1rius/cns1rius.github.io/img/custom/springBg.webp" type="image/webp">
     - <link rel="preload" as="image" href="https://cdn.bili33.top/gh/cns1rius/cns1rius.github.io/img/custom/avatar.webp" type="image/webp">
     - <link rel="preload" href="/custom/nav.js" as="script">
