@@ -77,7 +77,7 @@ hexo.extend.filter.register("before_generate", () => {
           cond === "internal"
             ? `${cdnjs_file + verType}`
             : `/pluginsSrc/${name}/${file + verType}`,
-        jsdelivr: `https://cdn.jsdmirror.com/npm/${name}${verType}/${min_file}`,
+        jsdelivr: `https://cdn.bili33.top/npm/${name}${verType}/${min_file}`,
         unpkg: `https://unpkg.com/${name}${verType}/${file}`,
         cdnjs: `https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${min_cdnjs_file}`,
         custom: (CDN.custom_format || "").replace(
