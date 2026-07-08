@@ -391,7 +391,7 @@ rightside_bottom: # new
 
 # Conversion between Traditional and Simplified Chinese
 translate:
-  enable: true
+  enable: false
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -479,8 +479,8 @@ math:
   # Choose: mathjax, katex
   # Leave it empty if you don't need math
   use: mathjax
-  per_page: true
-  hide_scrollbar: false
+  per_page: false
+  hide_scrollbar: true
 
   mathjax:
     # Enable the contextual menu
@@ -1120,6 +1120,8 @@ inject:
   head:
     - <script defer data-pjax src="/custom/ban.js"></script>
     - <script defer data-pjax src="/custom/welcome.js"></script>
+    - <link rel="preconnect" href="https://cdn.bili33.top" crossorigin>
+    - <link rel="dns-prefetch" href="//cdn.bili33.top">
     - <link rel="preload" href="https://cdn.bili33.top/npm/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
     - <link rel="preload" href="https://cdn.bili33.top/npm/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
     - <link rel="preload" href="https://cdn.bili33.top/gh/cns1rius/cns1rius.github.io/css/相遇的那一刻开始.TTF" as="font" type="font/ttf" crossorigin>
@@ -1201,7 +1203,7 @@ CDN:
     # local_search:
     # main:
     # main_css:
-    # mathjax:
+    mathjax: https://cdn.bili33.top/npm/mathjax@latest/es5/tex-chtml.min.js
     medium_zoom: https://cdn.bili33.top/npm/medium-zoom/dist/medium-zoom.min.js
     # mermaid:
     meting_js: /custom/Meting.min.js
