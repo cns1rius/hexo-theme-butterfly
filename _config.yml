@@ -26,7 +26,9 @@ menu:
     追番: /bangumis/ || fab fa-bilibili
     追剧: /cinemas/ || fab fa-bilibili
     游戏: /games/ || fas fa-gamepad
-  友链: /link/ || fas fa-link
+  友人||fas fa-users||hide:
+    友链: /link/ || fas fa-link
+    朋友圈: /link/fc.html || fas fa-user-friends
   关于: /about/ || fas fa-heart
   tools||fas fa-tools||hide:
     cyberchef: /cyberchef/ || fas fa-thin fa-key

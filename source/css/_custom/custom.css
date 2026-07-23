@@ -583,6 +583,10 @@ a:hover {
   left: -80px;
 }
 
+.menus_items .menus_item:nth-child(4) .menus_item_child {
+  left: -20px;
+}
+
 .menus_items .menus_item:nth-child(6) .menus_item_child {
   left: -50px;
 }
