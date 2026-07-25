@@ -38,7 +38,13 @@ script.
         const headerList = { 'Accept': 'application/json' }
 
         if (!{isServerURL}) {
-          headerList['Authorization'] = `Bearer ${config.token}`
+          if (config.token) {
+            headerList['Authorization'] = `Bearer ${config.token}`
+          } else {
+            //- headerList['Authorization'] = 'Bearer undefined'
+            headerList['x-umami-share-token'] = config.share_token
+            headerList['x-umami-share-context'] = 1
+          }
         } else {
           headerList['x-umami-api-key'] = config.token
         }

@@ -722,7 +722,7 @@ microsoft_clarity:
 umami_analytics:
   enable: true
   # For self-hosted setups, configure the hostname of the Umami instance
-  serverURL: https://cloud.umami.is
+  serverURL: https://gateway-us.umami.is
   website_id: edb580f9-c557-47e7-b93d-dbd1c97d2c5e
   option:
   UV_PV:
@@ -730,7 +730,8 @@ umami_analytics:
     site_pv: true
     page_pv: true
     # Umami Cloud (API key) / self-hosted Umami (token)
-    token: KbrKS1nYbEp51AsCV/1ilvZjcI9e/Vh2kaD3kwo/CNT9iCVSdK3/kqC8SQQVbZkFBOUnquAvasdU2X0VKpsBu4en1mtNk+soB6Ogh++mWR5/Cs+kQ0qubmSOsrpYMYQzJkLrJWjDY0gulYRA8yHGQ4I8SFGbibw5KtpZqSgg5J2imakR/h3qHS95W1Lx5RcnW7KdSS3n1AAi1cxqgREH/OaaJ1Vd6z4Xhz1US0A+TxRI9YCqS+EQ9r+I3zqk7nqnzI0SEVelXMJi3wC78YdgSbWM7s2xUQ8XdGk9j72W3P1SEyIIlToQIQ8qgEPTm/KnT0BS6IdJEv2fW612TXO4rV0oAdC/AQ59gqaV9g== # q7VGWkCYOir0FzMc6BH3jSZUTdxcJfkA
+    token: # q7VGWkCYOir0FzMc6BH3jSZUTdxcJfkA
+    share_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaGFyZUlkIjoiNmFmOGIzMTAtMTJmMC00NjhmLTkyNjgtNjgzZjU4YWVjNTU5Iiwic2hhcmVUeXBlIjoxLCJwYXJhbWV0ZXJzIjp7InV0bSI6dHJ1ZSwiZ29hbHMiOnRydWUsImV2ZW50cyI6dHJ1ZSwiY29tcGFyZSI6dHJ1ZSwiZnVubmVscyI6dHJ1ZSwicmV2ZW51ZSI6dHJ1ZSwiam91cm5leXMiOnRydWUsIm92ZXJ2aWV3Ijp0cnVlLCJyZWFsdGltZSI6dHJ1ZSwic2Vzc2lvbnMiOnRydWUsImJyZWFrZG93biI6dHJ1ZSwicmV0ZW50aW9uIjp0cnVlLCJhbGxvd0ZpbHRlciI6dHJ1ZSwiYXR0cmlidXRpb24iOnRydWUsInBlcmZvcm1hbmNlIjp0cnVlfSwid2Vic2l0ZUlkIjoiZWRiNTgwZjktYzU1Ny00N2U3LWI5M2QtZGJkMWM5N2QyYzVlIiwidHlwZSI6InNoYXJlIiwiaWF0IjoxNzg0ODYwMzQwfQ.Cm4QlDS2_6Z7sjaq1Mz_uaZ_XHmpzt-F8CVQLploZzU
 
 # --------------------------------------
 # Advertisement
