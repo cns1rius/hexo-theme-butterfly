@@ -323,7 +323,11 @@ aside:
       link: https://github.com/cns1rius
   card_announcement:
     enable: true
-    content: "剑未佩妥，出门已是江湖；<br/>千帆过尽，归来仍是少年。<br/><a href='/link/'>欢迎留言/交换友链</a><br/><a onclick='location.reload(true);'>如遇bug请单击此处修复</a>"
+    content: |
+      剑未佩妥，出门已是江湖；<br>
+      千帆过尽，归来仍是少年。<br>
+      <a style="font-size: 16px;font-weight:bold;" href='https://github.com/cns1rius/awesome-platform-recommendations/tree/main'>一些平台推荐</a><br>
+      <a href='/link/'>欢迎留言/交换友链</a><br>
   card_recent_post:
     enable: true
     # If set 0 will show all
