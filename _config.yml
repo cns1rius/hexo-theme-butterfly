@@ -62,7 +62,7 @@ social:
   # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
   fab fa-qq: tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=MjkxNjExNzQ3Mw== || QQ || '#D0B9FF'
-  fab fa-weixin: https://s1rius.space/img/custom/wechat.webp || 微信 || '#07C160'
+  fab fa-weixin: https://blog.s1rius.space/img/custom/wechat.webp || 微信 || '#07C160'
   fab fa-bilibili: https://space.bilibili.com/NDM0MTM1MDI2 || bilibili || '#00a1d6'
   fas fa-envelope-circle-check: mailto:s1rius@s1rius.space || Email(GPG) || '#4a7dbe'
   fas fa-rss: /atom.xml || RSS || '#f26522'
@@ -110,7 +110,7 @@ footer_img: false
 
 # Website Background
 # Can set it to color or image url
-background: https://s1rius.space/img/cover/bg.webp
+background: https://blog.s1rius.space/img/cover/bg.webp
 
 cover:
   # Disable the cover or not
@@ -224,7 +224,7 @@ toc:
 post_copyright:
   enable: true
   decode: true
-  author_href: https://s1rius.space
+  author_href: https://blog.s1rius.space
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
@@ -607,7 +607,7 @@ valine:
   avatar: monsterid
   # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   serverURLs:
-  bg: https://s1rius.space/img/comment.webp
+  bg: https://blog.s1rius.space/img/comment.webp
   # Use Valine visitor count as the page view count
   visitor: false
   option:

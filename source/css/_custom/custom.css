@@ -548,13 +548,13 @@ a:hover {
 
 /* 个人信息卡片背景图 */
 [data-theme="light"] #aside-content > .card-widget.card-info {
-  background-image: url(https://s1rius.space/img/custom/springBg.webp);
+  background-image: url(https://blog.s1rius.space/img/custom/springBg.webp);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
 }
 [data-theme="dark"] #aside-content > .card-widget.card-info {
-  background-image: url(https://s1rius.space/img/custom/aurora.webp);
+  background-image: url(https://blog.s1rius.space/img/custom/aurora.webp);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
