@@ -1141,7 +1141,7 @@ inject:
     # - <link rel="prefetch" href="/custom/welcome.js" as="script">
     - <link rel="prefetch" as="image" href="https://cdn.bili33.top/gh/cns1rius/cns1rius.github.io/img/custom/sakura.svg" type="image/svg+xml">
     - <meta name="msvalidate.01" content="6994F478B9346FDEB76593EE5F53A3EB" />
-    - <meta name="baidu-site-verification" content="codeva-TEqPHvxz8H" />
+    - <meta name="baidu-site-verification" content="codeva-codeva-vJwbeCTTAZ" />
     - <meta name="google-site-verification" content="PhNm04OAt29b44VWOP0BiUatmAjYjyc9ao7CcqQO4rY" />
     # - <link rel="stylesheet" href="/xxx.css">                      所有css已在index.styl中引入
     # - <link rel="stylesheet" href="/css/rightmenu.css"> # </link 自定义右键 https://yisous.xyz/posts/11eb4aac//>
