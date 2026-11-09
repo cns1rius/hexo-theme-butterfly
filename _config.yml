@@ -72,7 +72,7 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/custom/sakura.svg
+favicon: /img/custom/avatar.ico # sakura.svg
 
 avatar:
   img: /img/custom/avatar.webp
