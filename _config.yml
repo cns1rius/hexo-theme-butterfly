@@ -856,8 +856,9 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work
 font:
-  global_font_size:
-  code_font_size:
+  # 全站以 17px 为基准；正文标题层级与行高在 post.styl 中统一设置。
+  global_font_size: 17px
+  code_font_size: 16px
   font_family:
   code_font_family:
 

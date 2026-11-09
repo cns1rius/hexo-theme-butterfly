@@ -72,8 +72,8 @@ if hexo-config('ai_summary.enable')
     .ai-explanation
       z-index 10
       padding 8px 12px
-      font-size 15px
-      line-height 1.4
+      font-size calc(var(--global-font-size) - 1px)
+      line-height 1.75
       color var(--liushen-text)
       text-align justify
 
@@ -99,7 +99,7 @@ if hexo-config('ai_summary.enable')
     
     .ai-title
       z-index 10
-      font-size 14px
+      font-size calc(var(--global-font-size) - 2px)
       display flex
       border-radius 8px
       align-items center

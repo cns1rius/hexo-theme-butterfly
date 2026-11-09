@@ -1,13 +1,4 @@
 beautify()
-  headStyle(fontsize)
-    padding-left: unit(fontsize + 12, 'px')
-
-    &:before
-      margin-left: unit((-(fontsize + 6)), 'px')
-      font-size: unit(fontsize, 'px')
-
-    &:hover
-      padding-left: unit(fontsize + 18, 'px')
 
   h1,
   h2,
@@ -16,13 +7,16 @@ beautify()
   h5,
   h6
     transition: all .2s ease-out
+    padding-left: 1em
 
     &:before
       position: absolute
-      top: calc(50% - 7px)
+      top: .425em
+      left: 0
       color: $title-prefix-icon-color
       content: $title-prefix-icon
       line-height: 1
+      font-size: .65em
       transition: all .2s ease-out
       @extend .fontawesomeIcon
 
@@ -30,23 +24,6 @@ beautify()
       &:before
         color: $light-blue
 
-  h1
-    headStyle(20)
-
-  h2
-    headStyle(18)
-
-  h3
-    headStyle(16)
-
-  h4
-    headStyle(14)
-
-  h5
-    headStyle(12)
-
-  h6
-    headStyle(12)
 
   ol,
   ul
@@ -69,6 +46,36 @@ beautify()
 #article-container
   word-wrap: break-word
   overflow-wrap: break-word
+  font-size: var(--global-font-size)
+  line-height: 1.85
+
+  // 标题以正文为基准递进，装饰图标在 beautify() 中同比缩放。
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+    margin: 1.5em 0 .65em
+    line-height: 1.5
+
+  h1
+    font-size: 1.75em
+
+  h2
+    font-size: 1.5em
+
+  h3
+    font-size: 1.25em
+
+  h4
+    font-size: 1.125em
+
+  h5
+    font-size: 1.0625em
+
+  h6
+    font-size: 1em
 
   a
     color: $theme-link-color
